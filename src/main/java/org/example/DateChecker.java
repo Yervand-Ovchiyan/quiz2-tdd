@@ -8,7 +8,10 @@ public class DateChecker {
 
     private static final Set<Month> MONTHS_WITH_31_DAYS = EnumSet.of(Month.JANUARY, Month.MARCH, Month.MAY, Month.JULY, Month.AUGUST, Month.OCTOBER,  Month.DECEMBER);
 
-
+/**
+ * Checks whether the given month has 31 days.
+ * February is not in the 31-day set, so it returns false.
+ */
     public boolean has31Days(Month month) {
        if (month == null) {
            throw new IllegalArgumentException("month cannot be null");
