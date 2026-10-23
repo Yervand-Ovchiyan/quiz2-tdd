@@ -12,6 +12,9 @@ public class Calculator {
         return x * y;
     }
     public int divide(int x, int y) {
-        return 0;
+        if (y == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return x / y;
     }
 }
