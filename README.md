@@ -16,5 +16,16 @@ It has two parts:
 2. JUnit 5 (Jupiter)
 
 ## Run the tests
+Open the Maven panel, open Lifecycle and double click test. If Maven is isntalled,
+you can also run 'mvn test' in the project folder. All 27 tests pass.
 
-Run `mvn test` in the project folder.
+## Reflection
+I wrote the test first for every method. I ran it and saw it fail before
+I wrote the code. Then i wrote just enough code to pass.
+
+My first code for has31Days was just return true. The next test showed that wasn't
+enough, so I wrote the real logic.
+
+Some tests passed right away, like the 30 day months and the odd number tests. My code already returned false, so those steps had no Red.
+
+The hardest part was the setup. I put my test file in the main folder by mistake, so JUnit was not found. I moved it to the test folder and it worked.
