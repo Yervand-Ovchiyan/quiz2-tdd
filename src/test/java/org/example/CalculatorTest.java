@@ -16,5 +16,13 @@ public class CalculatorTest {
     public void testSubtractWithNegativeResults() {
         assertEquals(-1, calculator.subtract(1,2), "1 minus 2 should equal -1");
     }
+    @Test
+    public void testMultiplyWithPositiveNumbers() {
+        assertEquals(12, calculator.multiply(3,4), "3 times 4 should equal 12");
+    }
+    @Test
+    public void testMultiplyWithNegativeResults() {
+        assertEquals(-6, calculator.multiply(-2,3), "-2 times 3 should equal -6");
+    }
 }
 
