@@ -38,6 +38,7 @@ public class DateCheckerTest {
     }
     @Test
     public void testNullMonthThrowsException() {
-        assertThrows(IllegalAccessError.class, () -> dateChecker.has31Days(null), "a null month should throw IllegalArgumentException" );
-    }
+        assertThrows(IllegalArgumentException.class,
+                () -> dateChecker.has31Days(null),
+                "A null month should throw IllegalArgumentException");    }
 }

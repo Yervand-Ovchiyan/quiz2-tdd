@@ -10,6 +10,9 @@ public class DateChecker {
 
 
     public boolean has31Days(Month month) {
+       if (month == null) {
+           throw new IllegalArgumentException("month cannot be null");
+       }
         return MONTHS_WITH_31_DAYS.contains(month);
     }
 }
